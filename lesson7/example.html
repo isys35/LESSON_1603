@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/example.css">
+    <title>Выпадающий список</title>
+</head>
+<body>
+    <!-- nav>ul>li*6>a[href="#"]{Ссылка} -->
+    <nav>
+        <ul class="level1">
+            <li><a href="#">Ссылка</a></li>
+            <li><a href="#">Ссылка</a></li>
+            <li><a href="#">Ссылка</a></li>
+            <li>
+                <a href="#">Ссылка</a>
+                <!-- ul.level2>li*7>a[href="#"]{Ссылка} -->
+                <ul class="level2">
+                    <li><a href="#">Ссылка</a></li>
+                    <li><a href="#">Ссылка</a></li>
+                    <li>
+                        <a href="#">Ссылка</a>
+                        <ul class="level3">
+                            <li><a href="#">LINK</a></li>
+                            <li><a href="#">LINK</a></li>
+                            <li><a href="#">LINK</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ссылка</a></li>
+                    <li><a href="#">Ссылка</a></li>
+                    <li><a href="#">Ссылка</a></li>
+                    <li><a href="#">Ссылка</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Ссылка</a></li>
+            <li><a href="#">Ссылка</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

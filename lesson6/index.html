@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Псевдоклассы и псевдоэлементы</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Псевдоклассы и псевдоэлементы</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="psevdo">
+        <h2 class="psevdo__title">Псевдоклассы</h2>
+        <div class="psevdo__item">
+          <h3 class="psevdo__subtitle">:hover</h3>
+          <div class="hover-block">
+            <a href="#" class="hover-block__link">Ссылка</a>
+          </div>
+        </div>
+        <div class="psevdo__item">
+          <h3 class="psevdo__subtitle">:visited</h3>
+          <div class="visited-block">
+            <a href="https://apsolyamov.ru/" target="_blank" class="visited-block__link">Ссылка</a>
+          </div>
+        </div>
+        <div class="psevdo__item">
+          <h3 class="psevdo__subtitle">:last-child и nth-child(n)</h3>
+          <div class="last-child-block nth-child-block">
+            <p class="last-child-block__item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta
+              quibusdam iusto inventore enim nemo.</p>
+            <p class="last-child-block__item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta
+              quibusdam iusto inventore enim nemo.</p>
+            <p class="last-child-block__item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta
+              quibusdam iusto inventore enim nemo.</p>
+            <p class="last-child-block__item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta
+              quibusdam iusto inventore enim nemo.</p>
+            <p class="last-child-block__item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid dicta
+              quibusdam iusto inventore enim nemo.</p>
+            <span>Я ломать пришёл</span>
+          </div>
+        </div>
+        <div class="psevdo__item">
+          <h3 class="psevdo__subtitle">example-1</h3>
+          <div class="example-1">
+            <a href="#" class="example-1__item">Ссылка</a>
+            <a href="#" class="example-1__item">Ссылка</a>
+            <a href="#" class="example-1__item">Ссылка</a>
+            <a href="#" class="example-1__item">Ссылка</a>
+            <a href="#" class="example-1__item">Ссылка</a>
+          </div>
+        </div>
+        <div class="psevdo__item">
+          <h3 class="psevdo__subtitle">:nth-child(even)</h3>
+          <div class="example-2">
+            <div class="example-2__item"></div>
+            <div class="example-2__item"></div>
+            <div class="example-2__item"></div>
+            <div class="example-2__item"></div>
+            <div class="example-2__item"></div>
+            <div class="example-2__item"></div>
+            <div class="example-2__item"></div>
+            <div class="example-2__item"></div>
+            <div class="example-2__item"></div>
+            <div class="example-2__item"></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="psevdo">
+        <h2 class="psevdo__title">Псевдоэлементы</h2>
+        <div class="psevdo__item">
+          <h3 class="psevdo__subtitle">::first-line</h3>
+          <div class="first_line_block">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consequuntur sequi optio! Maiores,
+              iusto nulla minus corporis nobis nostrum. Vel dolores odio, fuga quae est ipsam! Natus, at pariatur
+              molestiae odio accusamus maiores impedit, temporibus dolorum rem iste eius aliquid neque nemo quidem nam
+              animi quas! Reprehenderit beatae repellat numquam repudiandae totam, minus placeat quidem est nam error
+              voluptas autem quae? Ex blanditiis voluptate totam omnis animi eveniet quas veniam cupiditate accusantium
+              accusamus ullam tenetur a vel voluptatibus, maiores dolorem? Labore deserunt quidem aliquam magni,
+              recusandae excepturi a vitae! Neque labore reprehenderit voluptate facilis soluta debitis commodi odio?
+              Ut, quisquam!</p>
+          </div>
+
+        </div>
+        <div class="psevdo__item">
+          <h3 class="psevdo__subtitle">::first-letter</h3>
+          <div class="first_letter_block">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consequuntur sequi optio! Maiores,
+              iusto nulla minus corporis nobis nostrum. Vel dolores odio, fuga quae est ipsam! Natus, at pariatur
+              molestiae odio accusamus maiores impedit, temporibus dolorum rem iste eius aliquid neque nemo quidem nam
+              animi quas! Reprehenderit beatae repellat numquam repudiandae totam, minus placeat quidem est nam error
+              voluptas autem quae? Ex blanditiis voluptate totam omnis animi eveniet quas veniam cupiditate accusantium
+              accusamus ullam tenetur a vel voluptatibus, maiores dolorem? Labore deserunt quidem aliquam magni,
+              recusandae excepturi a vitae! Neque labore reprehenderit voluptate facilis soluta debitis commodi odio?
+              Ut, quisquam!</p>
+          </div>
+
+        </div>
+        <div class="psevdo__item">
+          <h3 class="psevdo__subtitle">::before and ::after</h3>
+          <div class="before_example_1">
+            <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et eveniet sequi
+              cumque amet. Culpa iure nesciunt facere rem voluptate eligendi aliquid commodi harum eos eveniet nisi
+              fugit eaque hic, eius beatae ratione libero reiciendis. In nostrum facilis dolor mollitia, dolorem
+              voluptatum odio officia aut laboriosam delectus hic repudiandae at incidunt qui repellat quasi officiis
+              doloremque veniam quia similique? Hic quia doloremque eius perspiciatis, nulla placeat pariatur.
+              Repellendus consectetur sequi expedita hic, aut earum minus praesentium amet id. Voluptate dignissimos
+              iusto, explicabo ex adipisci architecto asperiores magni, quisquam doloribus voluptatibus cumque
+              praesentium? Quaerat voluptate in architecto illo sequi necessitatibus nobis et!</p>
+          </div>
+          <div class="before_example_2">
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="before_example_3">
+            <!-- ul>li*5{Элемент списка $} -->
+            <ul>
+              <li>Элемент списка 1</li>
+              <li>Элемент списка 2</li>
+              <li>Элемент списка 3</li>
+              <li>Элемент списка 4</li>
+              <li>Элемент списка 5</li>
+            </ul>
+          </div>
+          <div class="before_example_4">
+            <a href="#">Ссылка</a>
+          </div>
+          <div class="before_example_5">
+            <a href="#">Ссылка</a>
+          </div>
+          <div class="before_example_6">
+            <a href="#">Ссылка</a>
+          </div>
+          <div class="before_example_7">
+            <a href="#">Ссылка</a>
+          </div>
+        </div>
+      </div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

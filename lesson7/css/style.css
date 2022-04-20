@@ -1,0 +1,109 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: 'Montserrat';
+    background-color: rgb(255, 245, 225);
+}
+
+h1 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Стандартное позиционирование. Может понадобиться если захотим вернуть элемент в стандартный поток */
+/* h1 {
+    position: static;
+} */
+
+.block-1 p {
+    margin-bottom: 20px;
+    background-color: rgba(196, 196, 196, 0.487);
+}
+
+p.element-2 {
+    width: 250px;
+    background-color: rgba(190, 190, 81);
+    /* Не выпадает из потока. Добавляются новые св-ва. left, top, right, bottom, z-index */
+    position: relative;
+    top: -50px;
+    z-index: -1;
+}
+
+p.element-4 {
+    width: 250px;
+    background-color: rgb(218, 123, 100);
+    /* Выпадает из потока. Добавляются новые св-ва. left, top, right, bottom, z-index */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.element-2 span {
+    background-color: rgba(255, 0, 0, 0.363);
+    font-size: 20px;
+    /* Выпадает из потока. Строится относительно родительского НЕ static элемента. В нашем случае relative элемента */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+p.element-6 {
+    width: 50px;
+    height: 50px;
+    background-color:rgba(14, 89, 32, 1);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    /* Выпадает из потока. И фиксирует своё положение относительно окна браузера */
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius:50%;
+    cursor: pointer;
+}
+
+
+.warning {
+    width: 300px;
+    background-color: yellow;
+    padding: 20px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.warning h2 {
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 20px;
+    background-color:red;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+}
+
+
+

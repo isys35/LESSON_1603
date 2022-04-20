@@ -1,0 +1,26 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.left, .right {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    background-color:rgba(101, 101, 101, 0.457);
+}
+
+
+.right {
+    height: 600px;
+}
+
+p {
+    background-color: rgba(182, 182, 56, 0.477);
+}
+
+p.sticky {
+    background-color: rgba(187, 61, 61, 0.477);
+    position: sticky;
+    top: 10px;
+}

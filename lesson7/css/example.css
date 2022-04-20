@@ -1,0 +1,54 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(42, 109, 42);
+    text-align: center;
+}
+
+li {
+    background-color: rgb(42, 109, 42);
+    display: inline-block;
+    position: relative;
+}
+
+li:hover {
+    background-color: rgb(16, 37, 16);
+}
+
+a {
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    width: 80px;
+}
+
+.level1>li:hover .level2 {
+    display: block;
+}
+
+.level2 {
+    display: block;
+    position: absolute;
+}
+
+.level2>li:hover .level3 {
+    display: block;
+}
+
+.level3 {
+    display: block;
+    position: absolute;
+    left: 80px;
+    top: 0;
+}
+
+.level3 {
+    font-size: 0px;
+    width: max-content;
+}
