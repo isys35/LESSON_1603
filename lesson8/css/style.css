@@ -1,0 +1,55 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: 'Montserrat';
+    background-color: rgb(255, 245, 225);
+}
+
+h1 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    display: inline-block;
+    min-width: 200px;
+}
+
+
+.input-field input {
+    padding: 10px;
+}
+
+.input-field input:focus {
+    background-color: rgb(102, 189, 102);
+    /* outline похож на border, но есть дополннительные св-ва */
+    outline: 4px solid green;
+    border: none;
+    outline-offset: 5px;
+}
+
+
+.input-field input:invalid {
+    background-color: rgb(228, 81, 81);
+    outline: 4px solid rgb(154, 12, 12);
+    border: none;
+    outline-offset: 5px;
+}
+
+
+
