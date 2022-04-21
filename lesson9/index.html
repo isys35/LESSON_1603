@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Flexbox</h1>
+        </header>
+        <main>
+            <div class="flex-example">
+                <h2 class="flex-example__title">flex-direction: row (по умолчанию)</h2>
+                <div class="flex-example__parent row">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">flex-direction: column</h2>
+                <div class="flex-example__parent column">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">flex-direction: row-reverse</h2>
+                <div class="flex-example__parent row-reverse">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">flex-direction: column-reverse</h2>
+                <div class="flex-example__parent column-reverse">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">justify-content: flex-start (по умолчанию)</h2>
+                <div class="flex-example__parent jc_flex-start">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">justify-content: flex-end</h2>
+                <div class="flex-example__parent jc_flex-end">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">justify-content: space-between</h2>
+                <div class="flex-example__parent jc_space-between">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">justify-content: space-around</h2>
+                <div class="flex-example__parent jc_space-around">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">justify-content: space-around</h2>
+                <div class="flex-example__parent jc_space-around">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">align-items: stretch (по умолчанию)</h2>
+                <div class="flex-example__parent ai stretch">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">align-items: center</h2>
+                <div class="flex-example__parent ai center">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">align-items: flex-start</h2>
+                <div class="flex-example__parent ai flex-start">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">align-items: flex-end</h2>
+                <div class="flex-example__parent ai flex-end">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">inline-flex</h2>
+                <div class="flex-example__parent inline-flex">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+                <div class="flex-example__parent inline-flex">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">align-items: baseline</h2>
+                <div class="flex-example__parent ai baseline">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">align-self</h2>
+                <div class="flex-example__parent ai">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item align-self">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">Пример с разным контентом</h2>
+                <div class="flex-example__parent">
+                    <div class="flex-example__item">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                        nesciunt?</div>
+                    <div class="flex-example__item">2 Lorem, ipsum dolor.</div>
+                    <div class="flex-example__item">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+                        officia a architecto nostrum, sapiente recusandae rerum laboriosam adipisci ipsam sed.</div>
+                    <div class="flex-example__item">4 Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+                    <div class="flex-example__item">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+                        explicabo velit illo eum laboriosam ducimus nihil cumque deserunt ipsa, quos vero rerum
+                        blanditiis id pariatur officia quae, omnis deleniti animi!</div>
+                    <div class="flex-example__item">6 Lorem ipsum dolor sit amet.</div>
+                    <div class="flex-example__item">7 Lorem.</div>
+                    <div class="flex-example__item">8 lorem21</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">Пример с разным контентом (Одинаковые колонки)</h2>
+                <div class="flex-example__parent identical-columns">
+                    <div class="flex-example__item">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                        nesciunt?</div>
+                    <div class="flex-example__item">2 Lorem, ipsum dolor.</div>
+                    <div class="flex-example__item">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+                        officia a architecto nostrum, sapiente recusandae rerum laboriosam adipisci ipsam sed.</div>
+                    <div class="flex-example__item">4 Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+                    <div class="flex-example__item">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+                        explicabo velit illo eum laboriosam ducimus nihil cumque deserunt ipsa, quos vero rerum
+                        blanditiis id pariatur officia quae, omnis deleniti animi!</div>
+                    <div class="flex-example__item">6 Lorem ipsum dolor sit amet.</div>
+                    <div class="flex-example__item">7 Lorem.</div>
+                    <div class="flex-example__item">8 lorem21</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">Пример с разным контентом и множество колонок</h2>
+                <div class="flex-example__parent identical-columns wraps">
+                    <div class="flex-example__item">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                        nesciunt?</div>
+                    <div class="flex-example__item">2 Lorem, ipsum dolor.</div>
+                    <div class="flex-example__item">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+                        officia a architecto nostrum, sapiente recusandae rerum laboriosam adipisci ipsam sed.</div>
+                    <div class="flex-example__item">4 Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+                    <div class="flex-example__item">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+                        explicabo velit illo eum laboriosam ducimus nihil cumque deserunt ipsa, quos vero rerum
+                        blanditiis id pariatur officia quae, omnis deleniti animi!</div>
+                    <div class="flex-example__item">6 Lorem ipsum dolor sit amet.</div>
+                    <div class="flex-example__item">7 Lorem.</div>
+                    <div class="flex-example__item">8 lorem21</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">Пример с разным контентом (Изменили порядок)</h2>
+                <div class="flex-example__parent">
+                    <div class="flex-example__item">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+                        nesciunt?</div>
+                    <div class="flex-example__item change-order">2 Lorem, ipsum dolor.</div>
+                    <div class="flex-example__item">3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+                        officia a architecto nostrum, sapiente recusandae rerum laboriosam adipisci ipsam sed.</div>
+                    <div class="flex-example__item">4 Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+                    <div class="flex-example__item">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+                        explicabo velit illo eum laboriosam ducimus nihil cumque deserunt ipsa, quos vero rerum
+                        blanditiis id pariatur officia quae, omnis deleniti animi!</div>
+                    <div class="flex-example__item">6 Lorem ipsum dolor sit amet.</div>
+                    <div class="flex-example__item">7 Lorem.</div>
+                    <div class="flex-example__item">8 lorem21</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">Изменили жадность</h2>
+                <div class="flex-example__parent row">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item change-grow-1">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item change-grow-2">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            <div class="flex-example">
+                <h2 class="flex-example__title">Изменили способность сжиматься</h2>
+                <div class="flex-example__parent identical-columns">
+                    <div class="flex-example__item">1</div>
+                    <div class="flex-example__item change-shrink-1">2</div>
+                    <div class="flex-example__item">3</div>
+                    <div class="flex-example__item">4</div>
+                    <div class="flex-example__item">5</div>
+                    <div class="flex-example__item change-shrink-2">6</div>
+                    <div class="flex-example__item">7</div>
+                    <div class="flex-example__item">8</div>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+</body>
+
+</html>
