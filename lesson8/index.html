@@ -18,44 +18,89 @@
             <h1>Формы</h1>
         </header>
         <main>
-            <form action="#">
+            <!-- метод get - данные в url -->
+            <!-- метод post - данные в теле запроса-->
+            <form action="#" method="get">
                 <div class="input-field">
                     <!-- Подсказка к input -->
                     <label>Имя пользователя</label>
                     <!-- Поле ввода текста -->
-                    <input type="text">
+                    <input type="text" name="text" value="isys35" required>
                 </div>
-                <div class="input-field">
+                <div class="input-field password">
                     <label>Пароль</label>
                     <!-- Поле ввода пароля -->
-                    <input type="password">
+                    <input type="password" name="password" placeholder="Введите пароль" required>
                 </div>
                 <div class="input-field">
                     <label>Выберите цвет</label>
                     <!-- Поле ввода цвета -->
-                    <input type="color">
+                    <input type="color" name="color">
                 </div>
                 <div class="input-field">
                     <label>Выберите дату</label>
                     <!-- Поле ввода даты -->
-                    <input type="date">
+                    <input type="date" name="date">
                 </div>
                 <div class="input-field">
                     <label>Диапозон</label>
                     <!-- Диапозон -->
-                    <input type="range" min="0" max="3">
+                    <input type="range" min="0" max="3" name="range">
                 </div>
                 <div class="input-field">
                     <label>Выберите число</label>
                     <!-- Число -->
-                    <input type="number" min="0" max="3">
+                    <input type="number" min="0" max="3" name="number">
                 </div>
                 <div class="input-field">
                     <label>Выберите email</label>
                     <!-- email -->
-                    <input type="email">
+                    <input type="email" name="email" value="isysbas@gmail.com" readonly>
                 </div>
-                <button>Отправить</button>
+                <div class="input-field">
+                    <label for="accept">Устанорвить яндекс бар</label>
+                    <!-- checkbox -->
+                    <input id="accept" type="checkbox" name="accept" checked>
+                </div>
+                <div class="input-field personal-data">
+                    <p>Согласны на обработку данных?</p>
+                    <label> Да
+                        <input type="radio" name="personal-data" value="yes">
+                    </label>
+                    <label> Нет
+                        <input type="radio" name="personal-data" value="no">
+                    </label>
+                </div>
+                <div class="input-field">
+                    <label>Выберите город</label>
+                    <select name="city">
+                        <option value="" hidden>Выбери город</option>
+                        <option value="minsk">Минск</option>
+                        <option value="bobruisk">Бобруйск</option>
+                        <option value="gomel" selected>Гомель</option>
+                        <option value="mogilev">Могилёв</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label>Введите много текста</label>
+                    <textarea name="many-text"></textarea>
+                </div>
+                <div class="input-field change-check">
+                    <label>
+                        <span>Пожаловаться</span>
+                        <input type="checkbox" name="accept-2">
+                        <span></span>
+                    </label>
+                </div>
+                <div class="flex">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                </div>
+                <input type="submit" value="Отправить">
+                <!-- <button>Отправить</button> -->
             </form>
         </main>
     </div>

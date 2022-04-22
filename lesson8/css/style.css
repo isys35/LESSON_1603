@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,7 +29,8 @@ h1 {
 
 .input-field label {
     display: inline-block;
-    min-width: 200px;
+    min-width: 300px;
+    font-size: 15px;
 }
 
 
@@ -44,6 +47,11 @@ h1 {
 }
 
 
+.input-field:hover label {
+    font-size: 20px;
+}
+
+
 .input-field input:invalid {
     background-color: rgb(228, 81, 81);
     outline: 4px solid rgb(154, 12, 12);
@@ -52,4 +60,93 @@ h1 {
 }
 
 
+.input-field.personal-data p {
+    display: inline-block;
+    min-width: 300px;
+}
 
+
+.input-field.personal-data label {
+    min-width: 100px;
+}
+
+
+
+.input-field.personal-data:hover label {
+    font-size: 15px;
+}
+
+.input-field.personal-data:hover p {
+    font-size: 20px;
+}
+
+
+.password input:focus::placeholder {
+    font-size: 0;
+}
+
+
+textarea {
+    width: 200px;
+    height: 50px;
+    resize: none;
+}
+
+.change-check label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.change-check input{
+    display: none;
+}
+
+.change-check input+span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px gray solid;
+    border-radius: 3px;
+    background-color:rgb(179, 177, 177) ;
+    margin-left: 10px;
+    position: relative;
+}
+
+
+.change-check input:checked+span{
+    border: 2px rgb(37, 140, 30) solid;
+    background-color:rgb(124, 238, 143) ;
+}
+
+.change-check input:checked+span::after {
+    content: "+";
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.change-radio input{
+    display: none;
+    z-index: -1;
+}
+
+.change-radio label{
+    display: flex;
+}
+
+.change-radio .title {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+    font-size: 50px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+}
