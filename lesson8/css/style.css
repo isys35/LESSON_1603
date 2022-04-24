@@ -47,7 +47,7 @@ h1 {
     font-size: 20px;
 }
 
-.input-field input:invalid {
+.input-field input:focus:invalid {
     background-color: rgb(228, 81, 81);
     outline: 4px solid rgb(154, 12, 12);
     border: none;
