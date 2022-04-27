@@ -31,52 +31,77 @@ h1 {
 
 
 .flex-example__parent {
+    display: flex;
 }
 
 .row {
+    /* Основная ось слева направо (по умолчанию) */
+    flex-direction: row;
 }
 
 .column {
+    /* Основная ось  сверху вниз */
+    flex-direction: column;
 }
 
 .row-reverse {
+    /* основная ось справа налево */
+    flex-direction: row-reverse;
 }
 
 
 .column-reverse {
+     /* основная ось снизу вверх */
+    flex-direction: column-reverse;
 }
 
 .jc_flex-start {
+    /* Выравнивает вдоль основной оси. (Слева в нашем случае) */
+    justify-content: flex-start;
 }
 
 .jc_flex-end {
+    /* Выравнивает вдоль основной оси. (Справа в нашем случае) */
+    justify-content: flex-end;
 }
 
 .jc_space-between {
+    /* Выравнивает вдоль основной оси. (Одинаковое расстояние между элементами) */
+    justify-content: space-between;
 }
 
 .jc_space-around {
+    justify-content: space-around;
 }
 
 .ai {
-    /* height: 150px; */
+    height: 150px;
 }
 
 .ai.stretch {
+    /* Выравнивает вдоль поперечной оси. (Расстягивание) */
+    align-items: stretch;
 }
 
 .ai.center {
+    /* Выравнивает вдоль поперечной оси. (По центру) */
+    align-items: center;
 }
 
 .ai.flex-start {
+    /* Выравнивает вдоль поперечной оси. (Сверху) */
+    align-items: flex-start;
 
 }
 
-
 .ai.flex-end {
+    /* Выравнивает вдоль поперечной оси. (Снизу) */
+    align-items: flex-start;
 }
 
 .inline-flex {
+    /* flex родитель ведёт себя inline-block */
+    display: inline-flex;
 }
 
 .ai.baseline .flex-example__item:nth-child(3) {
@@ -84,34 +109,56 @@ h1 {
 }
 
 .ai.baseline {
+    align-items: baseline;
 }
 
 .align-self {
+    align-self: center;
 }
 
 
+.identical-columns {
+    align-items: baseline;
+}
+
 .identical-columns .flex-example__item {
+    flex-basis: 20%;
+}
+
+.baseline-2 {
+    line-height: 80px;
 }
 
 .wraps {
+    height: 800px;
+    flex-wrap: wrap;
+    align-items: space-around;
+    /* Выравнивание многострочных элементов */
+    align-content: center;
 }
 
 
 .change-order {
+    order: 1;
 }
 
 .change-grow-1 {
+    /* Способность расширяться */
+    flex-grow: 1;
 }
 
-
 .change-grow-2 {
+    flex-grow: 3;
 }
 
 
 .change-shrink-1 {
+    flex-shrink: 2;
 }
 
 .change-shrink-2 {
+    /* Способность сжиматься */
+    flex-shrink: 0;
 }
 
 
